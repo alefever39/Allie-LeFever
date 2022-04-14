@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    background-color: #B9B6C2;
+    display: block;
+    position:relative;
+    width:auto;
+    height: 40px;
+    border-bottom: 2px solid #000000;
+}
+
+h1#name-plate {
+    height: 22px;
+    width: 120px;
+    position: absolute;
+    bottom: 9px;
+    left: 15px;
+    font-size: 20px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+a#contact-me {
+    height: 17px;
+    width: 80px;
+    position: absolute;
+    bottom: 11px;
+    right: 15px;
+    font-size: 15px;
+    text-align: right;
+}
+
+div#menu-bar {
+    position: relative;
+    width: 100px;
+    height: 100%;
+    background-color: #D1CEDB;
+    float: left;
+}
+
+button {
+    color: blue;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    margin: 5px;
+    left: auto;
+}
+
+div.main-page {
+    margin-top: -20px;
+    margin-left: 100px;
+    background-color: #DFDCEA;
+    width: auto;
+    height: 100%;
+}
+
+div#about-me-text {
+    display: none;
+}
