@@ -10,20 +10,30 @@
     <body>
         <header>
             <h1 id="name-plate">Allie LeFever</h1>
-            <a id="contact-me" href="example.com">Contact Me</a>
+            <a id="contact-me" href="http://example.com">Contact Me</a>
         </header>
         <div id="menu-bar">
-            <button id="about-me" type='button' onclick="colorChange('about-me')">
+            <button id="about-me" type='button' onclick="selectText('about-me-main')">
                 About Me
             </button>
-            <button id="hobbies" type='button' onclick="colorChange('hobbies')">
+            <button id="hobbies" type='button' onclick="selectText('my-hobbies-main')">
                 My Hobbies
             </button>
         </div>
-        <div class="main-page">
-            <div id="about-me-main">
+        <div id="main-page">
+            <div id="about-me-main" class="main-page-text">
                 <h2>About Me</h2>
-                <p>Test text</p>
+                <p>I am a former buliding automation engineer at Siemens Industries. The challenges at Siemens were not the challenges I found rewarding, so I decided to reach for new heights by branching out to software development.</p>
+            </div>
+            <div id="my-hobbies-main" class="main-page-text">
+                <h2>My Hobbies</h2>
+                <ul>
+                    <li>Ultimate Frisbee</li>
+                    <li>Video Games</li>
+                    <li>Piano</li>
+                    <li>Drawing</li>
+                    <li>Watching Shows</li>
+                </ul>
             </div>
         </div>
         <script src="script.js"></script>

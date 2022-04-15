@@ -4,17 +4,18 @@ html, body {
 }
 
 header {
-    background-color: #B9B6C2;
+    background-color: #46838F;
     display: block;
     position:relative;
     width:auto;
     height: 40px;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid black;
+    font-family: Helvetica, sans-serif;
 }
 
 h1#name-plate {
     height: 22px;
-    width: 120px;
+    width: 200px;
     position: absolute;
     bottom: 9px;
     left: 15px;
@@ -37,12 +38,15 @@ div#menu-bar {
     position: relative;
     width: 100px;
     height: 100%;
-    background-color: #D1CEDB;
+    background-color: #46838F;
     float: left;
+    font-family: Helvetica, sans-serif;
+    border-right: 2px solid #000000;
 }
 
 button {
-    color: blue;
+    color: black;
+    background-color: #75ABEB;
     width: 90px;
     height: 30px;
     text-align: center;
@@ -50,14 +54,20 @@ button {
     left: auto;
 }
 
-div.main-page {
+div#main-page {
     margin-top: -20px;
     margin-left: 100px;
-    background-color: #DFDCEA;
+    background-color: #DEDEDE;
     width: auto;
     height: 100%;
+    font-family: Helvetica, sans-serif;
 }
 
-div#about-me-text {
+.main-page-text {
     display: none;
+}
+
+h2, p {
+    display: inherit;
+    font-family: inherit;
 }
