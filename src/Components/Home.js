@@ -1,5 +1,6 @@
 import HeadShot from "../Images/personal_website_portrait.jpg";
 import SectionCard from "./SectionCard";
+import { SocialIcon } from "react-social-icons";
 
 function Home() {
   const features = [
@@ -27,6 +28,7 @@ function Home() {
 
   return (
     <div className="bg-zinc-500/75 flex-col content-center justify-center w-screen p-10">
+      {/* about section */}
       <SectionCard>
         <div className="w-5/12 flex justify-center shadow-md">
           <img
@@ -44,6 +46,16 @@ function Home() {
             </p>
           </div>
         </div>
+      </SectionCard>
+
+      {/* contact section */}
+      <SectionCard>
+        <h1 className="mt-2 font-bold leading-8 tracking-tight text-gray-900 sm:text-lg md:text-xl">
+          Where to find me:
+        </h1>
+        <SocialIcon url="https://github.com/alefever39" />
+        <SocialIcon url="https://www.linkedin.com/in/allie-lefever/" />
+        <SocialIcon url="mailto:alefever39@gmail.com" />
       </SectionCard>
 
       <SectionCard>
