@@ -1,4 +1,5 @@
 import HeadShot from "../Images/personal_website_portrait.jpg";
+import SectionCard from "./SectionCard";
 
 function Home() {
   const features = [
@@ -26,11 +27,11 @@ function Home() {
 
   return (
     <div className="bg-zinc-500/75 flex-col content-center justify-center w-screen p-10">
-      <div className="flex w-full justify-around">
-        <div className="w-5/12 flex justify-center">
+      <SectionCard>
+        <div className="w-5/12 flex justify-center shadow-md">
           <img
             src={HeadShot}
-            className="w-full h-auto object-contain"
+            className="w-full h-auto object-contain rounded-md"
             alt="Picture of Allie"
           />
         </div>
@@ -43,9 +44,9 @@ function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </SectionCard>
 
-      <div className="mt-10">
+      <SectionCard>
         <dl className="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">
           {features.map((feature) => (
             <div key={feature.name} className="relative">
@@ -63,7 +64,7 @@ function Home() {
             </div>
           ))}
         </dl>
-      </div>
+      </SectionCard>
     </div>
   );
 }
