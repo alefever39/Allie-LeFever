@@ -1,6 +1,6 @@
-import HeadShot from "../Images/personal_website_portrait.jpg";
-import SectionCard from "./SectionCard";
-import { SocialIcon } from "react-social-icons";
+import AboutMe from "./AboutMe";
+import ContactInfo from "./ContactInfo";
+import Experience from "./Experience";
 
 function Home() {
   const features = [
@@ -27,38 +27,11 @@ function Home() {
   ];
 
   return (
-    <div className="bg-zinc-500/75 flex-col content-center justify-center w-screen p-10">
-      {/* about section */}
-      <SectionCard>
-        <div className="w-5/12 flex justify-center shadow-md">
-          <img
-            src={HeadShot}
-            className="w-full h-auto object-contain rounded-md"
-            alt="Picture of Allie"
-          />
-        </div>
-
-        <div className="flex-col justify-center content-center w-5/12 px-4 sm:px-6 lg:px-8">
-          <div>
-            <h2 className="text-lg font-semibold">Hi! I'm</h2>
-            <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-              Allie LeFever
-            </p>
-          </div>
-        </div>
-      </SectionCard>
-
-      {/* contact section */}
-      <SectionCard>
-        <h1 className="mt-2 font-bold leading-8 tracking-tight text-gray-900 sm:text-lg md:text-xl">
-          Where to find me:
-        </h1>
-        <SocialIcon url="https://github.com/alefever39" />
-        <SocialIcon url="https://www.linkedin.com/in/allie-lefever/" />
-        <SocialIcon url="mailto:alefever39@gmail.com" />
-      </SectionCard>
-
-      <SectionCard>
+    <div className="bg-zinc-500/75 flex-col content-items-center justify-items-center w-full sm:p-0 md:p-10">
+      <AboutMe />
+      <ContactInfo />
+      <Experience />
+      {/*<SectionCard>
         <dl className="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">
           {features.map((feature) => (
             <div key={feature.name} className="relative">
@@ -76,7 +49,7 @@ function Home() {
             </div>
           ))}
         </dl>
-      </SectionCard>
+      </SectionCard> */}
     </div>
   );
 }
